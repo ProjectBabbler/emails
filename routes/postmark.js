@@ -47,7 +47,7 @@ router.all('/', function(req, res) {
     });
 
     var objs = emails.map(function(email) {
-        return emailRef.ref(email).set(true);
+        return emailRef.child(email).set(true);
     });
 
     Promise.all(objs).then(() => {

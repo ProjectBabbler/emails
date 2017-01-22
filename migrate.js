@@ -4,7 +4,7 @@ let emailRef = admin.database().ref('emails');
 let parseResults = require('./scrapedemail.json');
 let ps = parseResults.results.map(result => {
     return;
-    return emailRef.ref(result.email).set(true);
+    return emailRef.child(result.email).set(true);
 });
 
 Promise.all(ps).then(() => {
