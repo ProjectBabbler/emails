@@ -8,11 +8,11 @@ exports.config = {
   /**
    * Array of application names.
    */
-  app_name: ['Field Guide Guru'],
+  app_name: ['Birder Emails'],
   /**
    * Your New Relic license key.
    */
-  license_key: '2b4273484836e239983ac1e8ca07456aa4e1f975',
+  license_key: 'fbb83c0a1949f20fbd6aaf06759a8dc63f0f941c',
   logging: {
     /**
      * Level at which to log. 'trace' is most useful to New Relic when diagnosing
