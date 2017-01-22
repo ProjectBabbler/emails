@@ -1,0 +1,31 @@
+{
+  "name": "emails",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./www",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ProjectBabbler/emails.git"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/ProjectBabbler/emails/issues"
+  },
+  "homepage": "https://github.com/ProjectBabbler/emails#readme",
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.14.0",
+    "firebase": "^3.6.6",
+    "firebase-admin": "^4.0.5",
+    "newrelic": "^1.36.1"
+  },
+  "devDependencies": {
+    "parse": "^1.9.2"
+  }
+}
