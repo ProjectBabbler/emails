@@ -47,7 +47,12 @@ router.all('/', function(req, res) {
     });
 
     var objs = emails.map(function(email) {
-        return emailRef.push().set(email);
+        return emailRef.orderByValue().equalTo(email).once('value').then(results => {
+            if (results.val()) {
+                return;
+            }
+            return emailRef.push().set(email);
+        });
     });
 
     Promise.all(objs).then(() => {
