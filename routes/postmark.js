@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var bodyParser = require('body-parser');
-var admin = require("./firebase");
+var admin = require("../firebase");
 
 let emailRef = admin.database().ref('emails');
 
